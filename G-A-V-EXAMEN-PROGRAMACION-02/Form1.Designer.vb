@@ -22,7 +22,6 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         GroupBox1 = New GroupBox()
         ckbRellenar = New CheckBox()
         dgvGastosAdmYVentas = New DataGridView()
@@ -43,6 +42,7 @@ Partial Class Form1
         ' 
         ' GroupBox1
         ' 
+        GroupBox1.BackColor = Color.FromArgb(CByte(228), CByte(225), CByte(202))
         GroupBox1.Controls.Add(ckbRellenar)
         GroupBox1.Location = New Point(12, 12)
         GroupBox1.Name = "GroupBox1"
@@ -53,13 +53,14 @@ Partial Class Form1
         ' ckbRellenar
         ' 
         ckbRellenar.AutoSize = True
+        ckbRellenar.BackColor = Color.FromArgb(CByte(228), CByte(225), CByte(202))
         ckbRellenar.Font = New Font("Segoe UI", 9F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         ckbRellenar.Location = New Point(6, 15)
         ckbRellenar.Name = "ckbRellenar"
         ckbRellenar.Size = New Size(106, 24)
         ckbRellenar.TabIndex = 0
         ckbRellenar.Text = "RELLENAR"
-        ckbRellenar.UseVisualStyleBackColor = True
+        ckbRellenar.UseVisualStyleBackColor = False
         ' 
         ' dgvGastosAdmYVentas
         ' 
@@ -67,6 +68,7 @@ Partial Class Form1
         dgvGastosAdmYVentas.AllowUserToDeleteRows = False
         dgvGastosAdmYVentas.AllowUserToResizeColumns = False
         dgvGastosAdmYVentas.AllowUserToResizeRows = False
+        dgvGastosAdmYVentas.BackgroundColor = Color.FromArgb(CByte(144), CByte(110), CByte(108))
         dgvGastosAdmYVentas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvGastosAdmYVentas.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4})
         dgvGastosAdmYVentas.Location = New Point(12, 63)
@@ -106,6 +108,7 @@ Partial Class Form1
         ' 
         ' txtTotal
         ' 
+        txtTotal.BackColor = Color.FromArgb(CByte(228), CByte(225), CByte(202))
         txtTotal.Location = New Point(623, 452)
         txtTotal.Name = "txtTotal"
         txtTotal.Size = New Size(169, 27)
@@ -113,6 +116,7 @@ Partial Class Form1
         ' 
         ' txtTotalSGWeb
         ' 
+        txtTotalSGWeb.BackColor = Color.FromArgb(CByte(228), CByte(225), CByte(202))
         txtTotalSGWeb.Location = New Point(448, 452)
         txtTotalSGWeb.Name = "txtTotalSGWeb"
         txtTotalSGWeb.Size = New Size(169, 27)
@@ -120,6 +124,7 @@ Partial Class Form1
         ' 
         ' txtTotalSGContable
         ' 
+        txtTotalSGContable.BackColor = Color.FromArgb(CByte(228), CByte(225), CByte(202))
         txtTotalSGContable.Location = New Point(273, 452)
         txtTotalSGContable.Name = "txtTotalSGContable"
         txtTotalSGContable.Size = New Size(169, 27)
@@ -127,49 +132,53 @@ Partial Class Form1
         ' 
         ' btnLimpiarCuadro
         ' 
-        btnLimpiarCuadro.BackgroundImage = CType(resources.GetObject("btnLimpiarCuadro.BackgroundImage"), Image)
+        btnLimpiarCuadro.BackColor = Color.FromArgb(CByte(228), CByte(225), CByte(202))
         btnLimpiarCuadro.BackgroundImageLayout = ImageLayout.Zoom
         btnLimpiarCuadro.Location = New Point(12, 444)
         btnLimpiarCuadro.Name = "btnLimpiarCuadro"
         btnLimpiarCuadro.Size = New Size(35, 35)
         btnLimpiarCuadro.TabIndex = 5
-        btnLimpiarCuadro.UseVisualStyleBackColor = True
+        btnLimpiarCuadro.Text = "Limpiar"
+        btnLimpiarCuadro.UseVisualStyleBackColor = False
         ' 
         ' btnActualizarCuadro
         ' 
-        btnActualizarCuadro.BackgroundImage = CType(resources.GetObject("btnActualizarCuadro.BackgroundImage"), Image)
+        btnActualizarCuadro.BackColor = Color.FromArgb(CByte(228), CByte(225), CByte(202))
         btnActualizarCuadro.BackgroundImageLayout = ImageLayout.Zoom
         btnActualizarCuadro.Location = New Point(53, 444)
         btnActualizarCuadro.Name = "btnActualizarCuadro"
         btnActualizarCuadro.Size = New Size(35, 35)
         btnActualizarCuadro.TabIndex = 6
-        btnActualizarCuadro.UseVisualStyleBackColor = True
+        btnActualizarCuadro.Text = "Recalcular"
+        btnActualizarCuadro.UseVisualStyleBackColor = False
         ' 
         ' btnAgregarConcepto
         ' 
-        btnAgregarConcepto.BackgroundImage = CType(resources.GetObject("btnAgregarConcepto.BackgroundImage"), Image)
+        btnAgregarConcepto.BackColor = Color.FromArgb(CByte(228), CByte(225), CByte(202))
         btnAgregarConcepto.BackgroundImageLayout = ImageLayout.Zoom
         btnAgregarConcepto.Location = New Point(94, 444)
         btnAgregarConcepto.Name = "btnAgregarConcepto"
         btnAgregarConcepto.Size = New Size(35, 35)
         btnAgregarConcepto.TabIndex = 7
-        btnAgregarConcepto.UseVisualStyleBackColor = True
+        btnAgregarConcepto.Text = "Add"
+        btnAgregarConcepto.UseVisualStyleBackColor = False
         ' 
         ' btnQuitarConcepto
         ' 
-        btnQuitarConcepto.BackgroundImage = CType(resources.GetObject("btnQuitarConcepto.BackgroundImage"), Image)
+        btnQuitarConcepto.BackColor = Color.FromArgb(CByte(228), CByte(225), CByte(202))
         btnQuitarConcepto.BackgroundImageLayout = ImageLayout.Zoom
         btnQuitarConcepto.Location = New Point(135, 444)
         btnQuitarConcepto.Name = "btnQuitarConcepto"
         btnQuitarConcepto.Size = New Size(35, 35)
         btnQuitarConcepto.TabIndex = 8
-        btnQuitarConcepto.UseVisualStyleBackColor = True
+        btnQuitarConcepto.Text = "Remover"
+        btnQuitarConcepto.UseVisualStyleBackColor = False
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.White
+        BackColor = Color.FromArgb(CByte(72), CByte(58), CByte(71))
         ClientSize = New Size(800, 489)
         Controls.Add(btnQuitarConcepto)
         Controls.Add(btnAgregarConcepto)
@@ -180,9 +189,11 @@ Partial Class Form1
         Controls.Add(txtTotal)
         Controls.Add(dgvGastosAdmYVentas)
         Controls.Add(GroupBox1)
+        FormBorderStyle = FormBorderStyle.SizableToolWindow
+        MaximizeBox = False
         Name = "Form1"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "Form1"
+        Text = "Gastos Administrativos y de ventas"
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
         CType(dgvGastosAdmYVentas, ComponentModel.ISupportInitialize).EndInit()

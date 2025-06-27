@@ -22,13 +22,13 @@ Partial Class AgregarConcepto
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AgregarConcepto))
         txtNuevoConcepto = New TextBox()
         btnAceptarAgregarConcepto = New Button()
         SuspendLayout()
         ' 
         ' txtNuevoConcepto
         ' 
+        txtNuevoConcepto.BackColor = Color.FromArgb(CByte(228), CByte(225), CByte(202))
         txtNuevoConcepto.Location = New Point(12, 20)
         txtNuevoConcepto.Name = "txtNuevoConcepto"
         txtNuevoConcepto.Size = New Size(213, 27)
@@ -36,21 +36,24 @@ Partial Class AgregarConcepto
         ' 
         ' btnAceptarAgregarConcepto
         ' 
-        btnAceptarAgregarConcepto.BackgroundImage = CType(resources.GetObject("btnAceptarAgregarConcepto.BackgroundImage"), Image)
+        btnAceptarAgregarConcepto.BackColor = Color.FromArgb(CByte(228), CByte(225), CByte(202))
         btnAceptarAgregarConcepto.BackgroundImageLayout = ImageLayout.Zoom
         btnAceptarAgregarConcepto.Location = New Point(239, 12)
         btnAceptarAgregarConcepto.Name = "btnAceptarAgregarConcepto"
         btnAceptarAgregarConcepto.Size = New Size(35, 35)
         btnAceptarAgregarConcepto.TabIndex = 1
-        btnAceptarAgregarConcepto.UseVisualStyleBackColor = True
+        btnAceptarAgregarConcepto.Text = "Add"
+        btnAceptarAgregarConcepto.UseVisualStyleBackColor = False
         ' 
         ' AgregarConcepto
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.FromArgb(CByte(72), CByte(58), CByte(71))
         ClientSize = New Size(286, 61)
         Controls.Add(btnAceptarAgregarConcepto)
         Controls.Add(txtNuevoConcepto)
+        FormBorderStyle = FormBorderStyle.FixedToolWindow
         Name = "AgregarConcepto"
         StartPosition = FormStartPosition.CenterScreen
         Text = "AgregarConcepto"

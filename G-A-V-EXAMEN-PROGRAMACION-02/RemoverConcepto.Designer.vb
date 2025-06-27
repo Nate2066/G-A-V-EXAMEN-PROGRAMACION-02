@@ -22,7 +22,6 @@ Partial Class RemoverConcepto
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RemoverConcepto))
         btnAceptarQuitarConcepto = New Button()
         dgvEliminarConceptos = New DataGridView()
         Column1 = New DataGridViewTextBoxColumn()
@@ -31,13 +30,14 @@ Partial Class RemoverConcepto
         ' 
         ' btnAceptarQuitarConcepto
         ' 
-        btnAceptarQuitarConcepto.BackgroundImage = CType(resources.GetObject("btnAceptarQuitarConcepto.BackgroundImage"), Image)
+        btnAceptarQuitarConcepto.BackColor = Color.FromArgb(CByte(228), CByte(225), CByte(202))
         btnAceptarQuitarConcepto.BackgroundImageLayout = ImageLayout.Zoom
         btnAceptarQuitarConcepto.Location = New Point(12, 8)
         btnAceptarQuitarConcepto.Name = "btnAceptarQuitarConcepto"
         btnAceptarQuitarConcepto.Size = New Size(35, 35)
         btnAceptarQuitarConcepto.TabIndex = 0
-        btnAceptarQuitarConcepto.UseVisualStyleBackColor = True
+        btnAceptarQuitarConcepto.Text = "Remover"
+        btnAceptarQuitarConcepto.UseVisualStyleBackColor = False
         ' 
         ' dgvEliminarConceptos
         ' 
@@ -45,6 +45,7 @@ Partial Class RemoverConcepto
         dgvEliminarConceptos.AllowUserToDeleteRows = False
         dgvEliminarConceptos.AllowUserToResizeColumns = False
         dgvEliminarConceptos.AllowUserToResizeRows = False
+        dgvEliminarConceptos.BackgroundColor = Color.FromArgb(CByte(144), CByte(110), CByte(108))
         dgvEliminarConceptos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvEliminarConceptos.Columns.AddRange(New DataGridViewColumn() {Column1})
         dgvEliminarConceptos.Location = New Point(12, 49)
@@ -64,9 +65,11 @@ Partial Class RemoverConcepto
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.FromArgb(CByte(72), CByte(58), CByte(71))
         ClientSize = New Size(317, 450)
         Controls.Add(dgvEliminarConceptos)
         Controls.Add(btnAceptarQuitarConcepto)
+        FormBorderStyle = FormBorderStyle.FixedToolWindow
         Name = "RemoverConcepto"
         StartPosition = FormStartPosition.CenterScreen
         Text = "RemoverConcepto"
